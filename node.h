@@ -1,3 +1,6 @@
+#ifndef NODE_H
+#define NODE_H
+
 #include <memory>
 #include <vector>
 
@@ -13,3 +16,5 @@ private:
     int val;
     char key;
 };
+
+#endif
