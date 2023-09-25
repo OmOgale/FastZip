@@ -27,9 +27,8 @@ int main(int argc, char* argv[]) {
     }
     std::string result;
     std::ofstream fout("output.bin");
-    fout << result;
     for (auto c : content) {
         result += store_inverse[c];
-        fout << store_inverse[c] << std::endl; 
     }
+    fout << result;
 }
