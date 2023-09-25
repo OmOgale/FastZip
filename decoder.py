@@ -9,7 +9,7 @@ sym_map = {}
 for a in sym_lst:
     if a[2::] in sym_map:
         continue
-    sym_map[a[2::]] == a[0]
+    sym_map[a[2::]] = a[0]
 
 bin_str = bin_data.decode("utf-8")
 search_str = ""
