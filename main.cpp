@@ -26,9 +26,10 @@ int main(int argc, char* argv[]) {
         store_inverse[i.second] = i.first; 
     }
     std::string result;
+    std::ofstream fout("output.bin");
+    fout << result;
     for (auto c : content) {
         result += store_inverse[c];
+        fout << store_inverse[c] << std::endl; 
     }
-    std::ofstream fout("output.txt");
-    fout << result;
 }
