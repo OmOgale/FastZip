@@ -7,7 +7,6 @@
 #include <unordered_map>
 #include "file_reader.h"
 #include "encoder.h"
-#include <cstddef>
 #include <vector>
 
 int main(int argc, char* argv[]) {
@@ -30,7 +29,6 @@ int main(int argc, char* argv[]) {
     for (auto c : content) {
         result += store_inverse[c];
     }
-    std::cout << result << std::endl;
     std::ofstream fout("output.txt");
     fout << result;
 }
