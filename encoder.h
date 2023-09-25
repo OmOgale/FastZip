@@ -1,3 +1,6 @@
+#ifndef ENCODER_H
+#define ENCODER_H
+
 #include <fstream>
 #include <memory>
 #include <queue>
@@ -23,3 +26,5 @@ private:
     std::priority_queue<std::shared_ptr<node>, std::vector<std::shared_ptr<node> >, compare> q;
     std::string content;
 };
+
+#endif

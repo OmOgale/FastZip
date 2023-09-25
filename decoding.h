@@ -3,25 +3,10 @@
 
 #include <iostream>
 #include <fstream>
-using namespace std;
 
-struct HuffmanNode {
-    char data;
-    HuffmanNode* left;
-    HuffmanNode* right;
 
-    HuffmanNode(char d) : data(d), left(nullptr), right(nullptr) {}
-};
-
-class HuffmanDecoder {
-public:
-    HuffmanDecoder(HuffmanNode* root);
-    void decodeTextFile(ifstream& inputFile, ofstream& outputFile);
-
-private:
-    HuffmanNode* root;
-
-    void decodeNode(ifstream& inputFile, ofstream& outputFile, HuffmanNode* current);
-};
+char value = 65;
+int temp = static_cast<int>(value);
+std::cout << temp << std::endl;
 
 #endif
