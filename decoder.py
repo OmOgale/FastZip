@@ -14,10 +14,10 @@ for a in sym_lst:
 bin_str = bin_data.decode("utf-8")
 search_str = ""
 make_str = ""
-n = len(bin_data)
+n = len(bin_str)
 
 for m in range(n):
-    search_str += bin_data[m]
+    search_str += bin_str[m]
     if search_str in sym_map:
         make_str += sym_map[search_str]
         search_str = ""
