@@ -5,3 +5,4 @@ cmake ..
 make 
 cd ..
 mv build/FastZip_EXEC .
+

@@ -1,4 +1,5 @@
 #include <cstddef>
+#include <cstdlib>
 #include <fstream>
 #include <ios>
 #include <iostream>
@@ -7,6 +8,7 @@
 #include <unordered_map>
 #include "file_reader.h"
 #include "encoder.h"
+#include "decoder.h"
 #include <vector>
 
 int main(int argc, char* argv[]) {
@@ -21,14 +23,20 @@ int main(int argc, char* argv[]) {
     encode.build_queue();
     std::shared_ptr<node> root = encode.make_tree();
     std::unordered_map<std::string, char> store = encode.get_codes(root);
+    decoder decode(store);
     std::unordered_map<char, std::string> store_inverse;
     for (auto i : store) {
         store_inverse[i.second] = i.first; 
     }
     std::string result;
-    std::ofstream fout("output.bin");
+    std::ofstream fout("intermediate.txt");
     for (auto c : content) {
         result += store_inverse[c];
     }
     fout << result;
+    
+    const char* compression_command = "python3 compress.py";
+    system(compression_command);
+
+    decode.create_decoded_file();
 }

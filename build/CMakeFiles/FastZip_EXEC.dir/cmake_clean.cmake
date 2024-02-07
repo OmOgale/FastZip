@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/FastZip_EXEC.dir/decoder.cpp.o"
+  "CMakeFiles/FastZip_EXEC.dir/decoder.cpp.o.d"
   "CMakeFiles/FastZip_EXEC.dir/encoder.cpp.o"
   "CMakeFiles/FastZip_EXEC.dir/encoder.cpp.o.d"
   "CMakeFiles/FastZip_EXEC.dir/file_reader.cpp.o"

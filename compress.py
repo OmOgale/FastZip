@@ -1,6 +1,9 @@
-f = open("output.bin", "r")
+import os
+
+f = open("intermediate.txt", "r")
 output = open("compressed.bin", "bw")
 byte_array = bytearray()
+
 for x in f:
     if x == "":
         continue
