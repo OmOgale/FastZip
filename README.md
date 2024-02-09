@@ -2,6 +2,7 @@
 
 The simplest and quickest way to zip and unzip your text files!!! :) <br />
 <strong> Utilizes the Huffman Coding Algorithm and achieves greater than a 2:1 compression ratio.</strong> <br />
+*Compiled using g++*
 
 `Initial Steps to use Zippy:`
 <ul>
