@@ -22,9 +22,21 @@ def parallel_processing(binary_string, chunk_size = 1000):
     with concurrent.futures.ThreadPoolExecutor() as executor:
         results = list(executor.map(process_chunk, chunks))
 
-    return ''.join(results)  
+    return ''.join(results)
+
+def is_binary(file_name):
+        try:
+            with open(file_name, "tr") as check_file:
+                check_file.read()
+                return False
+        except Exception:
+            return True
 
 file_name = sys.argv[1]
+
+if not is_binary(file_name):
+    print("Please verify if the input is a bin file")
+    sys.exit(1)
 
 with open(file_name, "rb") as file:
 
