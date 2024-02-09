@@ -1,6 +1,5 @@
 import concurrent.futures
 import sys
-# Open the binary file in read mode
 
 if len(sys.argv) < 2:
     sys.exit(1)
