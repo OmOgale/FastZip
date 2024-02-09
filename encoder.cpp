@@ -49,3 +49,20 @@ std::unordered_map<std::string, char> encoder::get_codes(std::shared_ptr<node> r
     traverse(store, root, ""); 
     return store;
 }
+
+std::string encoder::create_encoding_string(std::unordered_map<std::string, char> encoding_map) {
+    std::string store_string = "|";
+    for (const auto& [key, value]: encoding_map) {
+        store_string += key + ":" + value + "|";
+    }
+    return store_string;
+}
+
+void encoder::create_intermediate_file(std::unordered_map<char, std::string> encoding_map_inverse, std::string binary_store_string) {
+    std::string result = binary_store_string;
+    std::ofstream fout("intermediate.txt");
+    for (const auto &c : content) {
+        result += encoding_map_inverse[c];
+    }
+    fout << result;
+}

@@ -47,5 +47,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/FastZip_EXEC.dir/DependInfo.cmake"
+  "CMakeFiles/Zippy.dir/DependInfo.cmake"
   )

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(FastZip)
+project(Zippy)
 set(CMAKE__CXX_STANDARD 17)
 FILE(GLOB CPPSOURCE *.cpp)
-add_executable(FastZip_EXEC ${CPPSOURCE})
+add_executable(Zippy ${CPPSOURCE})

@@ -117,48 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named FastZip_EXEC
+# Target rules for targets named Zippy
 
 # Build rule for target.
-FastZip_EXEC: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FastZip_EXEC
-.PHONY : FastZip_EXEC
+Zippy: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Zippy
+.PHONY : Zippy
 
 # fast build rule for target.
-FastZip_EXEC/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FastZip_EXEC.dir/build.make CMakeFiles/FastZip_EXEC.dir/build
-.PHONY : FastZip_EXEC/fast
-
-decoder.o: decoder.cpp.o
-.PHONY : decoder.o
-
-# target to build an object file
-decoder.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FastZip_EXEC.dir/build.make CMakeFiles/FastZip_EXEC.dir/decoder.cpp.o
-.PHONY : decoder.cpp.o
-
-decoder.i: decoder.cpp.i
-.PHONY : decoder.i
-
-# target to preprocess a source file
-decoder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FastZip_EXEC.dir/build.make CMakeFiles/FastZip_EXEC.dir/decoder.cpp.i
-.PHONY : decoder.cpp.i
-
-decoder.s: decoder.cpp.s
-.PHONY : decoder.s
-
-# target to generate assembly for a file
-decoder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FastZip_EXEC.dir/build.make CMakeFiles/FastZip_EXEC.dir/decoder.cpp.s
-.PHONY : decoder.cpp.s
+Zippy/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zippy.dir/build.make CMakeFiles/Zippy.dir/build
+.PHONY : Zippy/fast
 
 encoder.o: encoder.cpp.o
 .PHONY : encoder.o
 
 # target to build an object file
 encoder.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FastZip_EXEC.dir/build.make CMakeFiles/FastZip_EXEC.dir/encoder.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zippy.dir/build.make CMakeFiles/Zippy.dir/encoder.cpp.o
 .PHONY : encoder.cpp.o
 
 encoder.i: encoder.cpp.i
@@ -166,7 +142,7 @@ encoder.i: encoder.cpp.i
 
 # target to preprocess a source file
 encoder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FastZip_EXEC.dir/build.make CMakeFiles/FastZip_EXEC.dir/encoder.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zippy.dir/build.make CMakeFiles/Zippy.dir/encoder.cpp.i
 .PHONY : encoder.cpp.i
 
 encoder.s: encoder.cpp.s
@@ -174,7 +150,7 @@ encoder.s: encoder.cpp.s
 
 # target to generate assembly for a file
 encoder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FastZip_EXEC.dir/build.make CMakeFiles/FastZip_EXEC.dir/encoder.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zippy.dir/build.make CMakeFiles/Zippy.dir/encoder.cpp.s
 .PHONY : encoder.cpp.s
 
 file_reader.o: file_reader.cpp.o
@@ -182,7 +158,7 @@ file_reader.o: file_reader.cpp.o
 
 # target to build an object file
 file_reader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FastZip_EXEC.dir/build.make CMakeFiles/FastZip_EXEC.dir/file_reader.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zippy.dir/build.make CMakeFiles/Zippy.dir/file_reader.cpp.o
 .PHONY : file_reader.cpp.o
 
 file_reader.i: file_reader.cpp.i
@@ -190,7 +166,7 @@ file_reader.i: file_reader.cpp.i
 
 # target to preprocess a source file
 file_reader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FastZip_EXEC.dir/build.make CMakeFiles/FastZip_EXEC.dir/file_reader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zippy.dir/build.make CMakeFiles/Zippy.dir/file_reader.cpp.i
 .PHONY : file_reader.cpp.i
 
 file_reader.s: file_reader.cpp.s
@@ -198,7 +174,7 @@ file_reader.s: file_reader.cpp.s
 
 # target to generate assembly for a file
 file_reader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FastZip_EXEC.dir/build.make CMakeFiles/FastZip_EXEC.dir/file_reader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zippy.dir/build.make CMakeFiles/Zippy.dir/file_reader.cpp.s
 .PHONY : file_reader.cpp.s
 
 main.o: main.cpp.o
@@ -206,7 +182,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FastZip_EXEC.dir/build.make CMakeFiles/FastZip_EXEC.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zippy.dir/build.make CMakeFiles/Zippy.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -214,7 +190,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FastZip_EXEC.dir/build.make CMakeFiles/FastZip_EXEC.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zippy.dir/build.make CMakeFiles/Zippy.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -222,7 +198,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FastZip_EXEC.dir/build.make CMakeFiles/FastZip_EXEC.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zippy.dir/build.make CMakeFiles/Zippy.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 node.o: node.cpp.o
@@ -230,7 +206,7 @@ node.o: node.cpp.o
 
 # target to build an object file
 node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FastZip_EXEC.dir/build.make CMakeFiles/FastZip_EXEC.dir/node.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zippy.dir/build.make CMakeFiles/Zippy.dir/node.cpp.o
 .PHONY : node.cpp.o
 
 node.i: node.cpp.i
@@ -238,7 +214,7 @@ node.i: node.cpp.i
 
 # target to preprocess a source file
 node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FastZip_EXEC.dir/build.make CMakeFiles/FastZip_EXEC.dir/node.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zippy.dir/build.make CMakeFiles/Zippy.dir/node.cpp.i
 .PHONY : node.cpp.i
 
 node.s: node.cpp.s
@@ -246,7 +222,7 @@ node.s: node.cpp.s
 
 # target to generate assembly for a file
 node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FastZip_EXEC.dir/build.make CMakeFiles/FastZip_EXEC.dir/node.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zippy.dir/build.make CMakeFiles/Zippy.dir/node.cpp.s
 .PHONY : node.cpp.s
 
 # Help Target
@@ -257,10 +233,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... FastZip_EXEC"
-	@echo "... decoder.o"
-	@echo "... decoder.i"
-	@echo "... decoder.s"
+	@echo "... Zippy"
 	@echo "... encoder.o"
 	@echo "... encoder.i"
 	@echo "... encoder.s"
