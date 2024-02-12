@@ -22,9 +22,9 @@ Containerized using Docker with multi-platform/architecture support using <a hre
 
 > Steps to Clone:
 > 1. Clone the repo.
-> 2. In the terminal, run <code>bash run.sh</code> to build the <code>Zippy</code> executable.</li>
-> 3. (IF NOT USING DOCKER) you can run <code>bash download.sh</code> if you want to save the compressed/decoded files to your machine.
-> *NOTE: Could run into issues with C++ compilation, especially on a different platform architecture.*
+> 2. In the terminal, run <code>bash run.sh</code> to build the <code>Zippy</code> executable.
+> 3. (IF NOT USING DOCKER) you can run <code>bash download.sh</code> if you want to save the compressed/decoded files to your machine. <br />
+> *NOTE: Could run into issues with C++ compilation, especially on a different platform architecture, since this program was designed on MacOS.*
 
 `How to run Zippy in the terminal:`
 <ul> Options:
